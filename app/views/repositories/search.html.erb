@@ -4,4 +4,12 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
+<div>
+  <% if @iems %>
+    <h2><%= @name %></h2>
+    <p><%= @url %></p>
+    <% else %>
+    <p><% @error %></p>
+    <% end %>
 
+</div>
